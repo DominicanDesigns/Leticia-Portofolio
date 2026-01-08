@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	if (navToggle && primaryNav) {
 		navToggle.addEventListener('click', function (e) {
 			e.stopPropagation();
-			constexpanded = this.getAttribute('aria-expanded') === 'true';
+			const expanded = this.getAttribute('aria-expanded') === 'true';
 			this.setAttribute('aria-expanded', String(!expanded));
 			primaryNav.classList.toggle('show');
 		});
